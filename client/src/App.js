@@ -2,6 +2,8 @@ import AddPost from './AddPost';
 import './App.css';
 import EditPost from './EditPost';
 import PostList from './PostList';
+import { BrowserRouter, Route } from 'react-router-dom'
+
 
 function App() {
   return (

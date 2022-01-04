@@ -5,3 +5,8 @@
 5-Import: AddPost,EditPost>App,
 Read the project structure again.
 Will use react router
+npm install react-router-dom
+Now import from react router.
+6-import { BrowserRouter, Route } from 'react-router-dom'
+Define how we will use router.
+
