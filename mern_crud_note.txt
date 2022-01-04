@@ -9,4 +9,14 @@ npm install react-router-dom
 Now import from react router.
 6-import { BrowserRouter, Route } from 'react-router-dom'
 Define how we will use router.
+** Router work after follow this format:
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+<BrowserRouter>
+<Routes>
+    <Route path="add" element={<AddPost />} exact/>
+    <Route path="edit" element={<EditPost />} exact/>
+    <Route path="/" element={<PostList />} exact/>
+</Routes>
+</BrowserRouter>
+7-Set routes in App, correct format
 

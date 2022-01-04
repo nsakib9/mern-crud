@@ -1,4 +1,5 @@
 import React from 'react'
+import PostItem from './PostItem';
 
 function EditPost() {
     return(

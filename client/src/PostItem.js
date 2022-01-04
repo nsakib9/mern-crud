@@ -4,7 +4,7 @@ function PostItem() {
     return(
         <div>
             <h1>
-                This is our list component
+                This is our Post Item component
             </h1>
         </div>
     )
