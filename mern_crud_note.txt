@@ -1,3 +1,4 @@
 1-Setup create-react-app client
 2**Add 4 files, Update PostList, PostItem
 3-Import: PostList>App, PostItem>PostList
+4-Update Addpost, Editpost
