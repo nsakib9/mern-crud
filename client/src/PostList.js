@@ -1,4 +1,5 @@
 import React from 'react'
+import PostItem from './PostItem'
 
 function PostList() {
     return(
@@ -6,6 +7,7 @@ function PostList() {
             <h1>
                 This is our list component
             </h1>
+            <PostItem />
         </div>
     )
 }
