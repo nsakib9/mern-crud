@@ -31,3 +31,5 @@ if error: npm cache clear --force
 Write "node server.js" it need to restart each time for any change
 Write "nodemon server.js" it need to restart each time for any change
 9-set / route with message check nodemon server
+Make connection with mongodb
+10-npm install mongoose and create conn.js file

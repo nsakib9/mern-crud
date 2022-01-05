@@ -19,6 +19,7 @@
   "homepage": "https://github.com/nsakib9/mern-crud#readme",
   "dependencies": {
     "express": "^4.17.2",
+    "mongoose": "^6.1.5",
     "nodemon": "^2.0.15"
   }
 }
