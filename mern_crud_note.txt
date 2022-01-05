@@ -20,3 +20,12 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 </BrowserRouter>
 7-Set routes in App, correct format
 
+Task:Now setup server, make nodejs server and install express
+-npm init
+-npm install express
+Here client folder is frontend other are backend.
+To save and load server automatically:
+-npm install nodemon
+if error: npm cache clear --force
+8-Write server.js server
+
