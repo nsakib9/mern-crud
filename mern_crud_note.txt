@@ -28,4 +28,6 @@ To save and load server automatically:
 -npm install nodemon
 if error: npm cache clear --force
 8-Write server.js server
-
+Write "node server.js" it need to restart each time for any change
+Write "nodemon server.js" it need to restart each time for any change
+9-set / route with message check nodemon server
