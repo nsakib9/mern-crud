@@ -59,4 +59,14 @@ npm i uniqid
 import uniqid in addpost 
 And uniqid to addpost() function.
 in console it will give different postid everytime.
-16-install and use uniqid, check with console
+16-install and use uniqid, check with console (Add post backend complete)
+can't send data directly with form , Need to create mogodb model for every collection.
+Create model for mongodb.
+Use seperate file beside server.js for all operations of nodejs
+Create folder routes.
+install required packages in backend side
+To perform mern stack application in backend need 2 package: router & body-paser
+npm i router body-parser
+nodemon server.js (for restart)
+Perform experss object, update post.js
+17-i packages, create router, schema and export
