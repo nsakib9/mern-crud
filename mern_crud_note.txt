@@ -36,3 +36,6 @@ Make connection with mongodb
 Visit https://www.mongoosejs.com/ 
 copy connection 2 line to conn.js
 11-from mongoosejs.com copy 2 line and write dbobject
+import conn.js to server.js
+copy connection code from compass to conn.js will connection
+12-import and conn.js connect url update
