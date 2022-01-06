@@ -11,6 +11,10 @@ const postschema = new schema({
     postid: String
 })
 
+router.get('/test', (req, res) => {
+    res.end('Hello Router we are using')
+})
+
 const PostModel = mongoose.model('posts', postschema)
 
 module.exports = router

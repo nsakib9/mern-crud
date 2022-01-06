@@ -70,3 +70,5 @@ npm i router body-parser
 nodemon server.js (for restart)
 Perform experss object, update post.js
 17-i packages, create router, schema and export
+Now need to import router on server.js
+18-Route in post and define in server
