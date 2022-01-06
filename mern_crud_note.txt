@@ -43,3 +43,7 @@ copy connection code from compass to conn.js will connection
 Update Add post page: Update style on app.js
 copy background color from: https://cssgradient.io
 13-Update some style on app.js
+install bootstrapm import on App.js and check addpost.js
+Add postadding form to addpost page.
+Add css on app.css
+14-BS import on App, form on AddPost, some css
