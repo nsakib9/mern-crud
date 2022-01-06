@@ -47,3 +47,9 @@ install bootstrapm import on App.js and check addpost.js
 Add postadding form to addpost page.
 Add css on app.css
 14-BS import on App, form on AddPost, some css
+Import React Hook, for 3 field 3 Hook
+useState define for 3 form fields.
+Set attribute on forms to set hooks
+Check data with onclick function
+Set value with function and check with console.
+15-import hooks for form field and check with console
