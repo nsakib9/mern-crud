@@ -53,3 +53,10 @@ Set attribute on forms to set hooks
 Check data with onclick function
 Set value with function and check with console.
 15-import hooks for form field and check with console
+Set unique id for every post 
+set with a package
+npm i uniqid
+import uniqid in addpost 
+And uniqid to addpost() function.
+in console it will give different postid everytime.
+16-install and use uniqid, check with console

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import uniqid from 'uniqid'
 
 function AddPost() {
     const [title, settitle] = useState('')
@@ -9,7 +10,8 @@ function AddPost() {
         var post = {
             title: title,
             imageurl: imageurl,
-            description: description
+            description: description,
+            postid: uniqid()
         }
         console.log(post);
     }
