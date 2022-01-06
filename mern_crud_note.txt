@@ -39,3 +39,7 @@ copy connection 2 line to conn.js
 import conn.js to server.js
 copy connection code from compass to conn.js will connection
 12-import and conn.js connect url update
+
+Update Add post page: Update style on app.js
+copy background color from: https://cssgradient.io
+13-Update some style on app.js

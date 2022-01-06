@@ -8,7 +8,7 @@ import EditPost from './EditPost';
 function App() {
   return (
     <div className="App">
-      <h1>Vue App Crud</h1>
+      <h1 style={{backgroundColor:'black', color: 'white', padding: '12px'}}>Vue App Crud</h1>
       <BrowserRouter>
       <Routes>
         <Route path="add" element={<AddPost />} exact/>
