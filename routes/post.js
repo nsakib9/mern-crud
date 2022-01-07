@@ -44,4 +44,14 @@ router.get('/getposts', (req, res)=>{
     })
 })
 
+router.post('/getpostdata', (req,res)=>{
+    PostModel.find({postid:req.body.postid}, (docs,err)=>{
+        if(!err){
+            res.send(docs)
+        }else{
+            res.send(err)
+        }
+    })
+})
+
 module.exports = router

@@ -82,3 +82,5 @@ setup bodyParser, set proxy on package, set connection with axios in AddPost, ma
 work with edit, delete
 pass id of edit item in url, using parameter
 22. set post id with edit url
+useParams to show post id on edit page.
+23-show specific post data in console
