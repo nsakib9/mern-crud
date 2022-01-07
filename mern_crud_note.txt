@@ -77,3 +77,4 @@ Now will send data from frontend:
 npm install axios
 setup bodyParser, set proxy on package, set connection with axios in AddPost, make post from route in post.js
 19-Save data to DB
+20-Show data in console

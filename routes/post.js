@@ -1,3 +1,4 @@
+const { json } = require('body-parser')
 const express = require('express')
 const router = express.Router()
 
@@ -27,6 +28,16 @@ router.post('/addnewpost', (req,res)=> {
     newpost.save(function(err){
         if(!err){
             res.send('New post added successfully')
+        }else{
+            res.send(err)
+        }
+    })
+})
+
+router.get('/getposts', (req, res)=>{
+    PostModel.find({}, function(docs, err){
+        if(!err){
+            res.send(docs)
         }else{
             res.send(err)
         }
