@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import uniqid from 'uniqid'
+import axios from 'axios'
+// import res from 'express/lib/response'
 
 function AddPost() {
     const [title, settitle] = useState('')
@@ -13,7 +15,12 @@ function AddPost() {
             description: description,
             postid: uniqid()
         }
-        console.log(post);
+        axios.post('/api/post/addnewpost', post).then(res=>{
+            alert(res.data)
+        }).then(err=>{
+            console.log(err)
+        })
+        // console.log(post);
     }
 
     return(

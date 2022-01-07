@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://ns_user:01845551440@crud.fihai.mongodb.net/test');
+mongoose.connect('mongodb+srv://ns_user:01845551440@crud.fihai.mongodb.net/mern_crud');
 // mongoose.connect('mongodb+srv://ns_user:01845551440@crud.fihai.mongodb.net/test', {useNewUrlParser: true, useUnifiedTopology:true});
 
 const dbobject = mongoose.connection

@@ -71,4 +71,9 @@ nodemon server.js (for restart)
 Perform experss object, update post.js
 17-i packages, create router, schema and export
 Now need to import router on server.js
+(Created DB model, router, call api router with node router)
 18-Route in post and define in server
+Now will send data from frontend:
+npm install axios
+setup bodyParser, set proxy on package, set connection with axios in AddPost, make post from route in post.js
+19-Save data to DB
