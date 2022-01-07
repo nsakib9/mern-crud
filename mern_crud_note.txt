@@ -79,3 +79,6 @@ setup bodyParser, set proxy on package, set connection with axios in AddPost, ma
 19-Save data to DB
 20-Show data in console
 21-Show data in preview
+work with edit, delete
+pass id of edit item in url, using parameter
+22. set post id with edit url

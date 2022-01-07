@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 
 function PostItem({post}) {
     return(
@@ -6,6 +8,11 @@ function PostItem({post}) {
            <h1 className='p-1'>{post.title}</h1>
            <img className='img-fluid p-1' src={post.imageurl} />
            <p className='p-1'>{post.description}</p>
+
+           <Link to={`/edit/${post._id}`}>
+           <li className='btn btn-primary'>Edit</li>
+           </Link>
+           <button className="btn btn-danger m-1">Delete</button>
         </div>
     )
 }

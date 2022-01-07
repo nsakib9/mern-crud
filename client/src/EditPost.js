@@ -1,5 +1,4 @@
 import React from 'react'
-import PostItem from './PostItem';
 
 function EditPost() {
     return(
@@ -7,7 +6,6 @@ function EditPost() {
             <h1>
                 This is our Edit Post component
             </h1>
-            <PostItem />
         </div>
     )
 }

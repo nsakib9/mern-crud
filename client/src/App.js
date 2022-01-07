@@ -13,7 +13,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="add" element={<AddPost />} exact/>
-        <Route path="edit" element={<EditPost />} exact/>
+        <Route path="edit/:postid" element={<EditPost />} exact/>
         <Route path="/" element={<PostList />} exact/>
       </Routes>
     </BrowserRouter>

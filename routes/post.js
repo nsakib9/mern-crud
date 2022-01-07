@@ -23,7 +23,7 @@ router.post('/addnewpost', (req,res)=> {
         title: req.body.title,
         imageurl: req.body.imageurl,
         description: req.body.description,
-        postit: req.body.postid
+        postid: req.body.postid
     })
     newpost.save(function(err){
         if(!err){
