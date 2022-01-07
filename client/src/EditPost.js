@@ -1,12 +1,14 @@
 import axios from 'axios';
 import React, { useEffect, useState  } from 'react'
-import { useParams } from 'react-router-dom';
+import { useNavigate , useParams } from 'react-router-dom'
+// useNavigate  instead of useHistory 
 
 function EditPost() {
     const params = useParams()
     const [title, settitle] = useState('')
     const [imageurl, setimageurl] = useState('')
     const [description, setdescription] = useState('')
+    const navigate = useNavigate ()
     useEffect(()=>{
         axios.post('/api/post/getpostdata', {postid: params.postid}).then(res=>{
             console.log(res.data[0])
@@ -28,6 +30,7 @@ function EditPost() {
         axios.post('/api/post/updatepost', updatedpost).then(res=>{
             console.log(res)
             alert(res.data)
+            navigate('/')
         }).catch(err=>{
             console.log(err)
         })
