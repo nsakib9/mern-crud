@@ -1,22 +1,51 @@
 import axios from 'axios';
-import React, { useEffect } from 'react'
+import React, { useEffect, useState  } from 'react'
 import { useParams } from 'react-router-dom';
 
 function EditPost() {
     const params = useParams()
+    const [title, settitle] = useState('')
+    const [imageurl, setimageurl] = useState('')
+    const [description, setdescription] = useState('')
     useEffect(()=>{
         axios.post('/api/post/getpostdata', {postid: params.postid}).then(res=>{
             console.log(res.data[0])
+            const postdata = res.data[0]
+            settitle(postdata.title)
+            setimageurl(postdata.imageurl)
+            setdescription(postdata.description)
         }).catch(err=>{
             console.log(err)
         })
-    })
+    },[])
+    function editpost() {
+        const updatedpost ={
+            title :title,
+            imageurl: imageurl,
+            description: description,
+            postid: params.postid
+        }
+        axios.post('/api/post/updatepost', updatedpost).then(res=>{
+            console.log(res)
+            alert(res.data)
+        }).catch(err=>{
+            console.log(err)
+        })
+    }
     return(
-        <div>
-            <h1>
-                This is our Edit Post component
-            </h1>
-            <h1>The post id is = {params.postid}</h1>
+        <div className="row justify-content-center">
+            <div className="col-md-6">
+                <h1>Edit the post</h1>
+                <div>
+                    <input type="text" placeholder='title' className="form-control" value={title} onChange={(e)=> {settitle(e.target.value)}} />
+                    <input type="text" placeholder='imageUrl' className="form-control" value={imageurl} onChange={(e)=>{setimageurl(e.target.value)}} />
+                    <textarea cols='30' rows="10" placeholder="Description" className="form-control" value={description} onChange={(e)=>{setdescription(e.target.value)}} />
+                    
+
+                    <button onClick={editpost} className="btn btn-success">Edit Post</button>
+                </div>
+            </div>
+            
         </div>
     )
 }

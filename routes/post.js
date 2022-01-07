@@ -54,4 +54,18 @@ router.post('/getpostdata', (req,res)=>{
     })
 })
 
+router.post('/updatepost', (req, res)=>{
+    PostModel.findOneAndUpdate({postid:req.body.postid},{
+        title:req.body.title,
+        imageurl:req.body.imageurl,
+        description:req.body.description
+    },(err)=>{
+        if(!err){
+            res.send('Post updated successfully')
+        }else{
+            res.send(err)
+        }
+    })
+})
+
 module.exports = router
