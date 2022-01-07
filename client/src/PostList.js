@@ -3,19 +3,25 @@ import PostItem from './PostItem'
 import axios from 'axios'
 
 function PostList() {
+    const [postdata, setpostdata] = useState([])
     useEffect(() => {
         axios.get('/api/post/getposts').then(res=>{
             console.log(res.data)
+            setpostdata(res.data)
         }).catch(err=>{
             console.log(err)
         })
     }, [])
+    const postlist = postdata.map(post=>{
+        return(
+            <div className='row justify-content-center'>
+                <PostItem post={post} />
+            </div>
+        )
+    })
     return(
         <div>
-            <h1>
-                This is our list component
-            </h1>
-            <PostItem />
+            {postlist}
         </div>
     )
 }

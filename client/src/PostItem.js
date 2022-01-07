@@ -1,11 +1,11 @@
 import React from 'react'
 
-function PostItem() {
+function PostItem({post}) {
     return(
-        <div>
-            <h1>
-                This is our Post Item component
-            </h1>
+        <div className='col-md-8 shadow p-3 mb-5 bg-body rounded'>
+           <h1 className='p-1'>{post.title}</h1>
+           <img className='img-fluid p-1' src={post.imageurl} />
+           <p className='p-1'>{post.description}</p>
         </div>
     )
 }
