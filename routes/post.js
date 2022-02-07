@@ -67,5 +67,14 @@ router.post('/updatepost', (req, res)=>{
         }
     })
 })
+router.post('/deletepost',(req,res)=>{
+    PostModel.findOneAndDelete({postid:req.body.postid},(err)=>{
+        if(!err){
+            res.send('Post deleted successfully')
+        }else{
+            res.send(err)
+        }
+    })
+})
 
 module.exports = router

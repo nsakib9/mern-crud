@@ -87,3 +87,4 @@ useParams to show post id on edit page.
 24-Post edit function complete
 Naviage to postlist after edit post using useNavigate
 25-useNavigate and back to home page after save
+delete
